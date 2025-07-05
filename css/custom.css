@@ -1,7 +1,183 @@
 /* ----------------------------------------------------------------
-	Custom CSS
+   Custom CSS Canvas - Thème Bleu Marine & Gris Ardoise Harmonieux
+   Site : You.me
+---------------------------------------------------------------- */
 
-	Add all your Custom Styled CSS here for New Styles or
-	Overwriting Default Theme Styles for Better Handling Updates
------------------------------------------------------------------*/
+/* =============================================================
+   PALETTE YOU.ME  (variables globales)
+============================================================= */
+:root {
+	/* Accent principal */
+	--cnvs-themecolor:       #001f3f;
+	--cnvs-themecolor-rgb:   0,31,63;
 
+	/* Bootstrap 5 – titres & liens */
+	--bs-heading-color:      var(--cnvs-themecolor);
+	--bs-link-color:         var(--cnvs-themecolor);
+	--bs-link-hover-color:   #194d80;           /* bleu 25 % plus clair */
+
+	/* Texte courant (gris bleuté lisible, contraste ≈ 7,3:1) */
+	--bs-body-color:         #4a5865;
+}
+
+/* =============================================================
+   TEXTE COURANT & variantes .text-dark / .text-black
+============================================================= */
+body,
+.text-body,
+.text-dark,
+.text-black {
+	color: var(--bs-body-color) !important;
+}
+
+/* =============================================================
+   TITRES & LIENS GLOBAUX
+============================================================= */
+h1, h2, h3, h4, h5, h6,
+.entry-title a,              /* titres Blog/News Canvas */
+.menu-item-title,
+.navbar-nav > li > a,
+.fancy-title h3, .fancy-title h4,
+.heading-block > h1, .heading-block > h2,
+.icon-box i,
+.feature-box h3,
+.badge-primary, .label-primary {
+	color: var(--cnvs-themecolor) !important;
+}
+
+/* Petits traits décoratifs sous les headings */
+.heading-block::after,
+.fancy-title::after {
+	background: var(--cnvs-themecolor);
+}
+
+/* =============================================================
+   BOUTONS & ÉTATS NAVBAR
+============================================================= */
+.btn-primary,
+.button,
+.navbar-nav > li.current > a,
+.navbar-nav > li > a:hover,
+.nav-link.active,
+.nav-link:hover {
+	--bs-btn-bg:            var(--cnvs-themecolor);
+	--bs-btn-border-color:  var(--cnvs-themecolor);
+	--bs-btn-color:         #fff;
+	color: var(--cnvs-themecolor) !important;
+}
+
+/* =============================================================
+   LIENS : couleur de base + survol
+============================================================= */
+a,
+a:visited,
+.link-primary,
+.navbar a,
+.nav-link,
+.navbar-nav > li > a {
+	color: var(--cnvs-themecolor) !important;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus,
+.link-primary:hover,
+.link-primary:focus,
+.navbar a:hover,
+.navbar a:focus,
+.nav-link:hover,
+.nav-link:focus {
+	color: var(--bs-link-hover-color) !important;
+	text-decoration: underline;
+	transition: color .15s ease-in-out;
+}
+
+/* Liens utilitaires Bootstrap “colored links” */
+.link-dark,
+.link-body-emphasis {
+	color: var(--cnvs-themecolor) !important;
+}
+.link-dark:hover,
+.link-body-emphasis:hover {
+	color: var(--bs-link-hover-color) !important;
+}
+
+/* Icônes inline qui héritent des liens */
+a i,
+p a > i,
+h1 a > i,
+h2 a > i {
+	color: currentColor !important;
+}
+
+/* =============================================================
+   PAGINATION, PUCE CARROUSEL, BADGES
+============================================================= */
+.owl-dots .owl-dot span,
+.swiper-pagination-bullet {
+	background: var(--cnvs-themecolor);
+}
+
+/* =============================================================
+   SVG décoratifs forcés en #111 / #000  →  recolorés
+============================================================= */
+svg path[fill="#111"],
+svg path[fill="#000"] {
+	fill: var(--cnvs-themecolor);
+}
+
+/* =============================================================
+   CARTES, BLOCS « news-feed »
+============================================================= */
+.card .card-title,
+.news-feed .entry-title,
+.portfolio-desc h3 {
+	color: var(--cnvs-themecolor);
+}
+
+/* En-tête de table (opening time, contact) */
+.table > :not(caption) > * > th {
+	color: var(--cnvs-themecolor);
+}
+
+/* =============================================================
+   SECTIONS SPÉCIFIQUES DEMO RESTAURANT
+============================================================= */
+#restaurant-team .team-title,
+#restaurant-menu .menu-desc h4,
+#restaurant-blog .entry-title {
+	color: var(--cnvs-themecolor) !important;
+}
+
+
+/* =============================================================
+   TITRES DU SLIDER  – forcer la couleur blanche
+   (à placer TOUT EN BAS de custom.css)
+============================================================= */
+.slider-caption h1,
+.slider-caption h2,
+.slider-caption h3,
+.slider-caption h4,
+.slider-caption .heading-block > h2,   /* au cas où la démo utilise heading-block */
+.swiper-slide .slider-caption-title    /* variant Swiper modern */
+{
+    color: #ffffff !important;
+}
+
+/* =============================================================
+   Liens du Copyright – couleur blanche permanente
+============================================================= */
+.copyrights-menu a,
+.copyright-links a {
+    color: #ffffff !important;          /* blanc par défaut */
+    text-decoration: none;
+}
+
+.copyrights-menu a:hover,
+.copyright-links a:hover,
+.copyrights-menu a:focus,
+.copyright-links a:focus {
+    color: #d1d1d1 !important;          /* gris clair en hover */
+    text-decoration: underline;         /* optionnel – visibilité */
+    transition: color .15s ease-in-out; /* même animation que les autres liens */
+}
