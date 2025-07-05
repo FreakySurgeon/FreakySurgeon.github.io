@@ -181,3 +181,14 @@ svg path[fill="#000"] {
     text-decoration: underline;         /* optionnel – visibilité */
     transition: color .15s ease-in-out; /* même animation que les autres liens */
 }
+
+/* =============================================================
+   Section #hero : fond blanc, texte bleu marine, portrait encadré
+   Transition SVG vague bleu marine + ombre douce juste après
+   (voir index.html)
+============================================================= */
+
+/* Section #hero : fond bleu marine, texte blanc */
+#hero, #hero h1, #hero .lead, #hero p, #hero strong {
+    color: #fff !important;
+}
