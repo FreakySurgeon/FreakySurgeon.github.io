@@ -193,8 +193,8 @@ svg path[fill="#000"] {
     color: #fff !important;
 }
 
-/* Supprime l'espace au-dessus de la première section après la vague du hero */
-#content .content-wrap, #content > .section:first-child {
-    padding-top: 0 !important;
-    margin-top: 0 !important;
+/* Supprime l'espace entre #hero et la vague */
+#hero {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
 }
