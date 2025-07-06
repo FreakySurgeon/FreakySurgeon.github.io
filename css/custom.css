@@ -396,3 +396,21 @@ svg path[fill="#000"] {
   color: #fff !important;
   text-decoration: none;
 }
+
+/* Suppression des marges/paddings verticaux autour de la section Infos pratiques */
+#reviews.section {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+#info.section {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.footer-custom {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
