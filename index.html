@@ -66,14 +66,16 @@
 						<nav class="primary-menu">
 							<ul class="menu-container">
 								<li class="menu-item"><a class="menu-link" href="#hero"><div>Accueil</div></a></li>
-								<li class="menu-item"><a class="menu-link" href="#about"><div>À propos</div></a></li>
-								<li class="menu-item"><a class="menu-link" href="#facebook-feed"><div>Plats du jour</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="#facebook-feed"><div>Plats du moment</div></a></li>
 								<li class="menu-item"><a class="menu-link" href="#reviews"><div>Avis</div></a></li>
-								<li class="menu-item"><a class="menu-link" href="#services"><div>Services</div></a></li>
-								<li class="menu-item"><a class="menu-link" href="#info"><div>Infos</div></a></li>
-								<li class="menu-item"><a class="menu-link" href="#cta"><div>Contact</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="#info"><div>Infos pratiques</div></a></li>
 							</ul>
 						</nav>
+						<!-- Numéro de téléphone visible à droite du menu sur desktop -->
+						<div class="d-none d-lg-flex align-items-center ms-4" style="font-size:1.1em;">
+							<svg width="22" height="22" fill="#001F3F" viewBox="0 0 24 24" style="margin-right:6px;"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.07 21 3 13.93 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z"></path></svg>
+							<a href="tel:+33670671721" style="color:#001F3F; font-weight:bold; text-decoration:none;">06 70 67 17 21</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -87,7 +89,7 @@
         <div class="row align-items-center flex-lg-row flex-column-reverse">
             <!-- Texte -->
             <div class="col-lg-7 mt-4 mt-lg-0">
-                <h1 class="display-3 fw-bold font-secondary" style="color:#fff;">Plats cuisinés maison à Trégunc</h1>
+                <h1 class="display-3 fw-bold font-secondary" style="color:#fff;">Plats maison à emporter à Trégunc</h1>
                 <p class="lead mb-4" style="color:#fff;">
                     <strong>You me</strong> est la nouvelle adresse des gourmands à Trégunc, ouverte fin janvier 2025 par le chef Emmanuel Courtault-Deslandes au 36, rue de Pont-Aven.<br><br>
                     Inspiré par l’énergie de la commune et la proximité des plages, Manu y prépare chaque jour des recettes qui changent au gré de ses envies et du marché.
@@ -102,10 +104,11 @@
 </section>
 <!-- Vague décorative bleu marine avec ombre douce -->
 <div style="line-height:0; filter: drop-shadow(0 8px 16px rgba(0,31,63,0.18)); margin-top:-2px;">
-  <svg viewBox="0 0 1440 80" width="100%" height="80" preserveAspectRatio="none" style="display:block;">
-    <path d="M0,80 C480,0 960,160 1440,80 L1440,0 L0,0 Z" fill="#001f3f"></path>
-  </svg>
-</div>		<!-- Content
+	<svg viewBox="0 0 1440 80" width="100%" height="80" preserveAspectRatio="none" style="display:block;">
+	  <path d="M0,80 C480,0 960,160 1440,80 L1440,0 L0,0 Z" fill="#001f3f"></path>
+	</svg>
+  </div>
+		<!-- Content
 		============================================= -->
 		<section id="content">
 
@@ -176,8 +179,8 @@
 					<div class="container">
 						<div class="heading-block text-center mb-0 border-bottom-0">
 							
-							<h3 class="text-transform-none font-secondary ls-0" style="font-size: 60px;">Quelques plats déjà réalisés</h3>
-							<span class="font-primary" style="font-size: 16px; color: #888">Un aperçu de notre créativité et de la diversité de notre cuisine, au fil des saisons et des inspirations du chef.</span>
+							<h3 class="text-transform-none font-secondary ls-0" style="font-size: 60px;">Notre cuisine</h3>
+							<span class="font-primary" style="font-size: 16px; color: #888">Un aperçu de notre créativité et de la diversité des nos plats précédents, au fil des saisons et des inspirations du chef.</span>
 						</div>
 					</div>
 				</div>
@@ -363,7 +366,7 @@
   </div>
 </section>
 
-<section id="info" class="section" style="background:#001F3F;padding:60px 0;">
+				<section id="info" class="section" style="background:#001F3F;padding:60px 0;">
   <div class="container">
 	<div class="row align-items-start gy-4" style="min-height:420px;">
 		<!-- Infos pratiques à gauche -->
@@ -419,6 +422,7 @@
 		</div>
       </div>
   </div>
+  <br><br>
 </section>
 
 <section id="about" class="section" style="background:#fff;">
@@ -437,8 +441,8 @@
 		  </p>
 		</div>
 	  </div>
-	</div>
-  </section>
+			</div>
+		</section>
 
   
 		<!-- Footer personnalisé blanc -->
@@ -493,6 +497,22 @@
 			});
 		});
 	</script>
+
+	<script>
+document.querySelectorAll('a.menu-link[href^="#"]').forEach(link => {
+  link.addEventListener('click', function(e) {
+    const targetId = this.getAttribute('href').replace('#', '');
+    const target = document.getElementById(targetId);
+    if (target) {
+      e.preventDefault();
+      const header = document.getElementById('header');
+      const headerHeight = header ? header.offsetHeight : 80;
+      const y = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  });
+});
+</script>
 
 	<div id="fb-root"></div>
 	<script async defer crossorigin="anonymous"
