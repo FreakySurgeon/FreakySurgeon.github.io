@@ -404,13 +404,6 @@ svg path[fill="#000"] {
 }
 
 #info.section {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
-}
-
-.footer-custom {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
 }
