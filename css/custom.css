@@ -203,3 +203,38 @@ svg path[fill="#000"] {
 #hero h1 {
     text-shadow: 0 4px 16px rgba(0,0,0,0.25), 0 1px 0 #001f3f;
 }
+
+/* Limite la hauteur de la photo sélectionnée à droite dans le carrousel food-menu */
+#food-menu-carousel .oc-item img {
+  max-height: 400px;
+  width: auto;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Utilise les images des plats comme miniatures dans la mosaïque à gauche */
+.food-menu .item-thumb .owl-dot:nth-of-type(1) span { background-image: url('../images/img/plats/filet_lingue_bleue_beurre_citron_thym_potager.jpg'); }
+.food-menu .item-thumb .owl-dot:nth-of-type(2) span { background-image: url('../images/img/plats/cote_veau_rotie_pesto_ail_des_ours.jpg'); }
+.food-menu .item-thumb .owl-dot:nth-of-type(3) span { background-image: url('../images/img/plats/ragout_lotte_sate.jpg'); }
+.food-menu .item-thumb .owl-dot:nth-of-type(4) span { background-image: url('../images/img/plats/risotto_grondin.jpg'); }
+.food-menu .item-thumb .owl-dot:nth-of-type(5) span { background-image: url('../images/img/plats/penne_poulet_fondant_tomates_confites_balsamique_parmesan.jpg'); }
+.food-menu .item-thumb .owl-dot:nth-of-type(6) span { background-image: url('../images/img/plats/effiloche_raie_chou_pointu_agrumes.jpg'); }
+.food-menu .item-thumb .owl-dot:nth-of-type(7) span { background-image: url('../images/img/plats/parmentier_joues_cochon_confites_sate.jpg'); }
+.food-menu .item-thumb .owl-dot:nth-of-type(8) span { background-image: url('../images/img/plats/clafoutis_abricots_maman.jpg'); }
+.food-menu .item-thumb .owl-dot:nth-of-type(9) span { background-image: url('../images/img/plats/tataki_thon.jpg'); }
+
+/* Ombre portée sur le titre de la section food-menu */
+.heading-block h3.text-transform-none.font-secondary.ls-0 {
+  text-shadow: 0 4px 16px rgba(0,0,0,0.35), 0 1px 0 #001f3f;
+}
+
+/* Améliore la visibilité du sous-titre de la section food-menu */
+.heading-block span.font-primary {
+  background: rgba(255,255,255,0.75);
+  padding: 8px 24px;
+  border-radius: 16px;
+  display: inline-block;
+  margin-top: 12px;
+}
