@@ -339,7 +339,52 @@
 					</div>
 				</div>
 
-				
+				<!-- Section Plats du jour (Facebook) -->
+				<section id="facebook-feed" class="section" style="background: #001F3F; color: #fff; padding: 60px 0 40px 0;">
+				  <div class="container">
+				    <div class="row align-items-center">
+				      <!-- Colonne gauche : titre, texte, bouton, entête Facebook -->
+				      <div class="col-md-6 mb-4 mb-md-0">
+				        <h1 class="display-3 fw-bold font-secondary" style="color:#fff !important; text-shadow:2px 2px 8px #0008;">En ce moment chez You me</h1>
+				        <p class="section-subtitle" style="text-align:left; margin-bottom:2em; background:rgba(0,0,0,0.25); display:inline-block; padding:0.5em 1.5em; border-radius:1em;">
+						
+						Retrouvez les plats actuellement disponibles sur
+						<a href="https://www.facebook.com/E.Courtault" target="_blank" class="fb-link">Facebook</a>
+						</p>
+				      </div>
+				      <!-- Colonne droite : uniquement le fil des posts -->
+				      <div class="col-md-6 d-flex justify-content-center">
+				        <div class="fb-page"
+				             data-href="https://www.facebook.com/E.Courtault"
+				             data-tabs="timeline"
+				             data-width="500"
+				             data-height="720"
+				             data-small-header="true"
+				             data-adapt-container-width="true"
+				             data-hide-cover="true"
+				             data-show-facepile="false">
+				          <blockquote cite="https://www.facebook.com/E.Courtault" class="fb-xfbml-parse-ignore">
+				            <a href="https://www.facebook.com/E.Courtault">You me</a>
+				          </blockquote>
+				        </div>
+				      </div>
+				    </div>
+				    <div id="fb-root"></div>
+				    <script async defer crossorigin="anonymous"
+				      src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v19.0"></script>
+				  </div>
+				</section>
+
+				<section id="reviews" class="section" style="background:#fff;">
+  <div class="container">
+    <h2 class="display-3 fw-bold font-secondary" style="color:#001F3F; text-shadow:2px 2px 8px #0002;">Ils nous ont fait confiance</h2>
+    <!-- Elfsight Google Reviews Widget -->
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <div class="elfsight-app-35e9e3fc-afb5-4d9e-af70-8ad5e8990ff2" data-elfsight-app-lazy></div>
+  </div>
+</section>
+
+				<div class="clear"></div>
 
 				<div class="section mb-0 bg-transparent">
 					<div class="container">
@@ -823,5 +868,9 @@
 		});
 	</script>
 
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous"
+	  src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v19.0"
+	  nonce="FB_NONCE"></script>
 </body>
 </html>
