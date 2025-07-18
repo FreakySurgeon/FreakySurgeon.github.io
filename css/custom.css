@@ -215,15 +215,15 @@ svg path[fill="#000"] {
 }
 
 /* Utilise les images des plats comme miniatures dans la mosaïque à gauche */
-.food-menu .item-thumb .owl-dot:nth-of-type(1) span { background-image: url('../images/img/plats/filet_lingue_bleue_beurre_citron_thym_potager.jpg'); }
-.food-menu .item-thumb .owl-dot:nth-of-type(2) span { background-image: url('../images/img/plats/cote_veau_rotie_pesto_ail_des_ours.jpg'); }
-.food-menu .item-thumb .owl-dot:nth-of-type(3) span { background-image: url('../images/img/plats/ragout_lotte_sate.jpg'); }
-.food-menu .item-thumb .owl-dot:nth-of-type(4) span { background-image: url('../images/img/plats/risotto_grondin.jpg'); }
-.food-menu .item-thumb .owl-dot:nth-of-type(5) span { background-image: url('../images/img/plats/penne_poulet_fondant_tomates_confites_balsamique_parmesan.jpg'); }
-.food-menu .item-thumb .owl-dot:nth-of-type(6) span { background-image: url('../images/img/plats/effiloche_raie_chou_pointu_agrumes.jpg'); }
-.food-menu .item-thumb .owl-dot:nth-of-type(7) span { background-image: url('../images/img/plats/parmentier_joues_cochon_confites_sate.jpg'); }
-.food-menu .item-thumb .owl-dot:nth-of-type(8) span { background-image: url('../images/img/plats/clafoutis_abricots_maman.jpg'); }
-.food-menu .item-thumb .owl-dot:nth-of-type(9) span { background-image: url('../images/img/plats/tataki_thon.jpg'); }
+.food-menu .item-thumb .owl-dot:nth-of-type(1) span { background-image: url('../images/img/plats/filet_lingue_bleue_beurre_citron_thym_potager.webp'); }
+.food-menu .item-thumb .owl-dot:nth-of-type(2) span { background-image: url('../images/img/plats/cote_veau_rotie_pesto_ail_des_ours.webp'); }
+.food-menu .item-thumb .owl-dot:nth-of-type(3) span { background-image: url('../images/img/plats/ragout_lotte_sate.webp'); }
+.food-menu .item-thumb .owl-dot:nth-of-type(4) span { background-image: url('../images/img/plats/risotto_grondin.webp'); }
+.food-menu .item-thumb .owl-dot:nth-of-type(5) span { background-image: url('../images/img/plats/penne_poulet_fondant_tomates_confites_balsamique_parmesan.webp'); }
+.food-menu .item-thumb .owl-dot:nth-of-type(6) span { background-image: url('../images/img/plats/effiloche_raie_chou_pointu_agrumes.webp'); }
+.food-menu .item-thumb .owl-dot:nth-of-type(7) span { background-image: url('../images/img/plats/parmentier_joues_cochon_confites_sate.webp'); }
+.food-menu .item-thumb .owl-dot:nth-of-type(8) span { background-image: url('../images/img/plats/clafoutis_abricots_maman.webp'); }
+.food-menu .item-thumb .owl-dot:nth-of-type(9) span { background-image: url('../images/img/plats/tataki_thon.webp'); }
 
 /* Ombre portée sur le titre de la section food-menu */
 .heading-block h3.text-transform-none.font-secondary.ls-0 {
