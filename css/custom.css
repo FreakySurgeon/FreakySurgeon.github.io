@@ -247,6 +247,34 @@ svg path[fill="#000"] {
   color: #fff;
   padding: 60px 0 40px 0;
 }
+
+/* Forcer la largeur du widget Facebook - seulement sur GitHub Pages */
+@media (min-width: 768px) {
+  #facebook-feed .fb-page {
+    min-width: 500px !important;
+    width: 100% !important;
+    max-width: 500px !important;
+  }
+  
+  #facebook-feed .fb-page iframe {
+    min-width: 500px !important;
+    width: 100% !important;
+    max-width: 500px !important;
+  }
+}
+
+/* Mobile - permettre la responsivité */
+@media (max-width: 767px) {
+  #facebook-feed .fb-page {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  #facebook-feed .fb-page iframe {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
 #facebook-feed .section-title {
   text-align: center;
   font-size: 2.5rem;
