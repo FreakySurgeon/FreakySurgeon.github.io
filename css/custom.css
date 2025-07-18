@@ -409,3 +409,24 @@ svg path[fill="#000"] {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
 }
+
+/* Section Notre philosophie - Arrière-plan responsive */
+.philosophie-section {
+    background-size: auto 300px !important;
+}
+
+/* Mobile - Arrière-plan plus petit */
+@media (max-width: 768px) {
+    .philosophie-section {
+        background-size: auto 225px !important;
+        background-position: right top !important;
+    }
+}
+
+/* Très petit écran - Arrière-plan minimal */
+@media (max-width: 480px) {
+    .philosophie-section {
+        background-size: auto 150px !important;
+        background-position: right top !important;
+    }
+}
